@@ -20,7 +20,6 @@ int main()
 								   cv::Point2f(200,100) };
 
 	const cv::Mat affine_matrix = cv::getAffineTransform(src_pt,dst_pt);
-
 	cv::warpAffine(srcMat, dstMat, affine_matrix, srcMat.size());
 
 	imshow("src1", srcMat);
